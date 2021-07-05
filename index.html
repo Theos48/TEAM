@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,
+  maximum-scale=5" />
+
+  <link rel="icon" href="Images/devchallenges.png" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+
+  <title>TEAM</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+    html {
+      font-family: "Poppins", sans-serif;
+
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+
+    }
+
+    *,
+    *:before,
+    *:after {
+      -webkit-box-sizing: inherit;
+      -moz-box-sizing: inherit;
+      box-sizing: inherit;
+
+    }
+
+    .page {
+      padding: 0;
+      margin: 0 4%;
+    }
+
+    .t1 {
+      font-family: 'PT Serif', serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 48px;
+      letter-spacing: -0.045rem;
+    }
+
+    .t2 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 27px;
+      color: #000;
+    }
+
+    .header__text {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 21px;
+      color: #000;
+    }
+
+    .body {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .card {
+      width: 100%;
+    }
+
+    .card__img-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .card__img:hover {
+      -webkit-box-shadow: 0px 0px 18px -6px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0px 18px -6px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 0px 18px -6px rgba(0, 0, 0, 0.75);
+
+    }
+
+    .card__img {
+      width: 90%;
+    }
+
+    .card__title {
+      font-family: 'PT Serif', serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 10px;
+      margin-left: 4px;
+      text-transform: uppercase;
+      line-height: 13px;
+      color: #000000;
+      writing-mode: vertical-lr;
+      /* transform: rotate(90deg); */
+      /* transform-origin: 6px 6px;
+      position: absolute; */
+    }
+
+    .card__name {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 21px;
+      color: #000;
+    }
+
+    @media screen and (max-width: 480px) and (min-width: 320px) {
+      .card {
+        width: 48%;
+      }
+
+      .card:nth-child(even) {
+        margin-top: 10%;
+      }
+
+      .card:nth-child(odd) {
+        margin-top: 0%;
+      }
+
+    }
+
+
+    @media screen and (max-width: 768px) and (min-width: 481px) {
+      .header {
+        display: flex;
+        width: 100%;
+      }
+
+      .header__title,
+      .header__description {
+        width: 50%;
+      }
+
+      .card {
+        width: 31%;
+        margin-top: 5%;
+      }
+
+      .card:nth-child(3n+2) {
+        margin-top: 15%;
+      }
+
+      .card__img-content {
+        justify-content: end;
+      }
+
+      .card__title {
+        font-size: 12px;
+        line-height: 16px
+      }
+
+      .card__name {
+        font-size: 18px;
+        line-height: 27px;
+      }
+    }
+
+    @media screen and (min-width: 769px) {
+      .page {
+        margin: 0 15%;
+        display: flex;
+        justify-content: center;
+      }
+      .page__inner{
+        max-width: 1080px;
+      }
+
+      .header {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+      }
+
+      .header__title,
+      .header__description {
+        width: 35%;
+      }
+
+      .card {
+        width: 31%;
+        margin-top: 5%;
+      }
+
+      .card:nth-child(3n+2) {
+        margin-top: 15%;
+      }
+
+      .card__img-content {
+        justify-content: end;
+      }
+
+      .card__title {
+        font-size: 12px;
+        line-height: 16px
+      }
+
+      .card__name {
+        font-size: 18px;
+        line-height: 27px;
+      }
+    }
+  </style>
+</head>
+
+<body class="page">
+  <div class="page__inner">
+    <div class="header">
+      <div class="header__title">
+        <h2 class="t1">The creative crew</h2>
+      </div>
+      <div class="header__description">
+        <h2 class="t2">WHO WE ARE</h2>
+        <p class="header__text">
+          We are team of creatively diverse. driven. innovative individuals working in various locations from the world.
+        </p>
+      </div>
+    </div>
+    <div class="body">
+      <div class="card">
+        <div class="card__img-content">
+          <img src="Images/photo1.png" alt="Product owner photo" class="card__img">
+          <span class="card__title">
+            Product owner
+          </span>
+        </div>
+        <span class="card__name">
+          Bill Mahoney
+        </span>
+      </div>
+      <div class="card">
+        <div class="card__img-content">
+          <img src="Images/photo1.png" alt="Product owner photo" class="card__img">
+          <span class="card__title">
+            Product owner
+          </span>
+        </div>
+        <span class="card__name">
+          Bill Mahoney
+        </span>
+      </div>
+      <div class="card">
+        <div class="card__img-content">
+          <img src="Images/photo1.png" alt="Product owner photo" class="card__img">
+          <span class="card__title">
+            Product owner
+          </span>
+        </div>
+        <span class="card__name">
+          Bill Mahoney
+        </span>
+      </div>
+      <div class="card">
+        <div class="card__img-content">
+          <img src="Images/photo1.png" alt="Product owner photo" class="card__img">
+          <span class="card__title">
+            Product owner
+          </span>
+        </div>
+        <span class="card__name">
+          Bill Mahoney
+        </span>
+      </div>
+      <div class="card">
+        <div class="card__img-content">
+          <img src="Images/photo1.png" alt="Product owner photo" class="card__img">
+          <span class="card__title">
+            Product owner
+          </span>
+        </div>
+        <span class="card__name">
+          Bill Mahoney
+        </span>
+      </div>
+      <div class="card">
+        <div class="card__img-content">
+          <img src="Images/photo1.png" alt="Product owner photo" class="card__img">
+          <span class="card__title">
+            Product owner
+          </span>
+        </div>
+        <span class="card__name">
+          Bill Mahoney
+        </span>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
